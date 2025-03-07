@@ -1,0 +1,187 @@
+leowebstranica.css
+
+/* Global Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+   
+    
+}
+html, body {
+    background-color: #F5E6C4;
+    
+}
+h1 {
+{
+    flex: 1;
+    text-align: center;
+        font-size: 1.8em;
+    }
+    
+}
+
+header {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1F4D3D;
+    color: white;
+    padding: 60px;
+    text-align: center;
+    font-size: 1.6em;
+    border-radius: 8px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column; /* Postavlja navigaciju ispod naslova */
+    align-items: center; /* Centriranje naslova i navigacije */
+    flex: 1;
+}
+
+.header-title {
+    font-size: 1.8em;
+    margin: 0; /* Uklanjanje margina oko naslova */
+}
+
+
+.header-logo {
+    width: 180px; /* Prilagodi veličinu logotipa */
+    height: auto;
+    position: absolute;
+    top: 30px; /* Prilagodi vertikalni položaj */
+}
+
+.header-logo.left {
+    left: 90px;
+}
+
+.header-logo.right {
+    right: 90px;
+}
+
+img {
+    width: 300px; /* Prilagodi širinu slike */
+    height: auto; /* Održava proporcije */
+    display: block;
+    margin: 20px auto; /* Centriranje slike */
+}
+
+nav {
+    display: flex;
+    gap: 20px; /* Razmak između linkova */
+    margin-top: 30px; /* Razmak između naslova i navigacije */
+    justify-content: center; /* Centriranje navigacije */
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    display: flex;
+    gap: 15px; /* Razmak između linkova */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: black;
+    padding: 0.3em;
+    border-radius: 10px;
+  }
+
+/* Container for each section */
+.container {
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    font-size: 1.3em;
+}
+
+/* Specific background for each section */
+#ueber-uns {
+    background: #f4f4f4;
+}
+
+#service {
+    background: #f4f4f4;
+}
+
+#kontakt {
+    background: #f4f4f4;
+}
+
+/* Contact form styles */
+.kontakt-formular {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    
+}
+
+.kontakt-formular h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  
+}
+
+.kontakt-formular label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.kontakt-formular input,
+.kontakt-formular textarea,
+.kontakt-formular button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.kontakt-formular input:focus,
+.kontakt-formular textarea:focus {
+    border-color: #1F4D3D;
+    outline: none;
+   
+}
+
+.kontakt-formular button {
+    background-color: #1F4D3D;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.kontakt-formular button:hover {
+    background-color: #145B38;
+}
+
+#formMessage {
+    font-size: 1.2rem;
+    color: green;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .kontakt-formular {
+        max-width: 100%;
+        margin: 0;
+    }
+}
